@@ -10,7 +10,7 @@ export default {
 </script>
 <style lang="scss" scope>
 *{
-  margin: auto;
+  margin: 0;
   border: 0;
 }
 #app,body,html{

@@ -24,11 +24,10 @@ export default {
   },
   methods:{
     tryto(){
+      this.$router.push('/playPage/try_flex')
     },
     registered(){
-      this.$router.push({
-        path:'/register'
-      })
+      this.$router.push('/register')
     }
   }
 }
