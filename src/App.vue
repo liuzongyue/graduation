@@ -16,5 +16,6 @@ export default {
 #app,body,html{
   width: 100%;
   height: 100%;
+  // background: rgb(161, 121, 10);
 }
 </style>

@@ -1,32 +1,26 @@
 <template>
   <div class="try_flex">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+    <for_movie></for_movie>
+    <latest_news></latest_news>
+    <news_movies></news_movies>
   </div>
 </template>
 
 <script>
+import for_movie from "../../components/for_movie"
+import news_movies from "./components/news_movies"
+import latest_news from "./components/latest_news"
 export default {
-
+  components:{
+    for_movie,
+    news_movies,
+    latest_news,
+  }
 }
 </script>
 
 <style lang="scss" scope>
 .try_flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  width: 80%;
-  height: 500px;
-  background-color: aquamarine;
-  span{
-    width: 40%;
-    height: 20%;
-    background-color: beige;
-  }
 }
 
 </style>
