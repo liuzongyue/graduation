@@ -36,14 +36,9 @@ export default {
 <style lang="scss" scope>
 .main-login{
   height: 100%;
-  background: url("./../assets/message/background_them.jpg") no-repeat;
-  background-size: 100% 100%;
-  background-attachment: scroll;
   display: flex;
   .login{
     width: 25%;
-    background-image: url('./../assets/message/login.jpg');
-    background-size: 100% 100%;
     opacity: 0.7;
     .name{
       margin-top: 10%;

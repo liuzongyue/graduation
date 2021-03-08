@@ -43,14 +43,9 @@ export default {
 <style lang="scss" scope>
 .main-register{
   height: 100%;
-  background: url("./../assets/message/background_them.jpg") no-repeat;
-  background-size: 100% 100%;
-  background-attachment: scroll;
   display: flex;
   .register{
     width: 25%;
-    background-image: url('./../assets/message/register.jpg');
-    opacity: 0.7;
     .name{
       margin-top: 10%;
       text-align: center;

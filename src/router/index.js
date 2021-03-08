@@ -38,6 +38,10 @@ const routes = [
     path:'/seevideo/index',//播放页面
     name:'seevideo',
     component: () => import('@/views/playPage/seevideo/index')
+  },{
+    path:'/personal_edit',//个人中心
+    name:'personal_edit',
+    component: () => import('@/components/personal_edit')
   }
 ]
 

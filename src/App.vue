@@ -1,11 +1,16 @@
 <template>
   <div id="app">
+    <navigationBar></navigationBar>
     <router-view></router-view>
   </div>
 </template>
 <script>
+import navigationBar from "./../src/views/components/navigation_bar"
 export default {
-  name:"app"
+  name:"app",
+  components: {
+    navigationBar,
+  }
 }
 </script>
 <style lang="scss" scope>
