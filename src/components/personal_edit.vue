@@ -56,15 +56,17 @@
 export default {
   data (){
     return {
-      options:[{
-        value:1998,
-        lable:1998
-      }],
-      yearvalue:'',
-      monthvalue:'',
-      dayvalue:'',
+      // options:[{
+      //   value:1998,
+      //   lable:1998
+      // }],
+      // yearvalue:'',
+      // monthvalue:'',
+      // dayvalue:'',
     }
-  }
+  },
+  methods: { 
+}
 }
 </script>
 <style lang="scss">

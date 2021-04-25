@@ -7,7 +7,7 @@
       <div class="name password">
         <span style="width:15%;text-align:end;margin-right:20px">password:</span><el-input v-model="input_password" placeholder="Please enter your password"></el-input>
       </div>
-      <el-button type="primary" plain class="btn_login" @click="tryto">login</el-button>
+      <el-button type="primary" plain class="btn_login" @click="tologin">login</el-button>
       <i @click="registered">/register</i>
       <h5>Welcome to use</h5>
     </div>
@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import {login} from "@/apis/login"
 export default {
   data(){
     return{
@@ -23,7 +24,21 @@ export default {
     }
   },
   methods:{
+    async tologin(){
+      var qs = require('qs')
+      const obj = {
+        name:this.input_name,
+        password:this.input_password
+      }
+      console.log(obj)
+      const {data:res} = await login(qs.stringify(obj))
+      if(res.code == 200){
+        this.$router.push('/playPage/try_flex')
+      }
+      console.log(res)
+    },
     tryto(){
+      // this.$router.push('main_play/edit_container')
       this.$router.push('/playPage/try_flex')
     },
     registered(){

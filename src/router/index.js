@@ -42,6 +42,10 @@ const routes = [
     path:'/personal_edit',//个人中心
     name:'personal_edit',
     component: () => import('@/components/personal_edit')
+  },{
+    path:'/main_play/edit_container',//富文本
+    name:'edit_container',
+    component: () => import('@/views/main_play/edit_container')
   }
 ]
 
