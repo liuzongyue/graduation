@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Message } from 'element-ui'
 // import router from "../router";
 const service = axios.create({
-  baseURL:"http://localhost:3000",
+  baseURL:"http://192.168.1.7:3000",
   timeout:5000
 })
 //请求拦截器
