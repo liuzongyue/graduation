@@ -5,7 +5,7 @@
       :playsinline="true"
       :options="playerOptions"
     ></video-player> -->
-    <video src="../../../../../../video01.mp4" controls></video>
+    <!-- <video src="../../../../../../video01.mp4" controls></video> -->
   </div>
 </template>
 
